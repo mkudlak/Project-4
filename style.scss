@@ -1,0 +1,294 @@
+/*HELPER*/
+.btn-btn {
+    margin-top: 10px;
+    width: 166px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: #16a085;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.section-title {
+    font-size: 18px;
+    color: #16a085;
+    letter-spacing: 2.7px;
+    margin: 0;
+}
+.section-p {
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 1.8px;
+}
+.scale-hover {/*Dla caraousel*/
+    transform: scale(1.5);
+}
+.button-hover {
+    background-color: #7be6d0;
+}
+
+
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    header {
+        margin-top: 2px;
+        background-image: url(images/livello-1.jpg);
+        background-size: cover;
+        width: 1280px;
+        height: 100vh;
+        color: white;
+    }
+    nav {
+        ul {
+            justify-content: space-between;
+            margin: 0;
+            text-align: center;
+            padding: 0;
+            li {
+                display: inline-block;
+                margin: 0 50px;
+                cursor: pointer;
+                font-size: 13px;
+            }
+            img {
+                margin-top: 28px;
+            }
+        }
+    }
+    .home {
+        text-align: center;
+        h1 {
+            margin-top: 300px;
+            font-size: 32px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 5.4px;
+        }
+        h3 {
+            font-size: 15px;
+            letter-spacing: 2.4px;
+        }
+        .btn-get {
+            @extend .btn-btn;
+            &:hover {
+                background-color: #7be6d0;
+            }
+        }
+    }
+    .home-social {
+        text-align: center;
+        margin-top: 70px;
+        &:hover {
+            @extend .scale-hover;
+        }
+        a i {
+            color: white;
+            justify-content: flex-end;
+            font-size: 25px;
+            margin: 10px;
+        }  
+    }
+    main {
+        width: 1280px;
+        height: 400px;
+        position: relative;
+        background-color: #f5f6f7;
+        .container {
+            .row {
+                padding: 110px;
+                .col-md-6 {
+                    h1 {
+                        @extend .section-title
+                    }
+                    p {
+                        margin-top: 10px;
+                        font-size: 12px;
+                        letter-spacing: 1.8px;
+                    }
+                }
+                .col-md-6 {
+                    img {
+                        position: absolute;
+                        right: 5%;
+                        top: -14%;
+                        clip: rect(0px,1000px, 320px,0px);
+                    }
+                    .btn-get {
+                        @extend .btn-btn;
+                        &:hover {
+                            @extend .button-hover;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .learn-more {
+        height: 500px;
+        .container > .row {
+            padding: 50px;
+            justify-content: center;
+
+            .col-md-6 {
+                img {
+                    position: absolute;
+                    clip: rect(0px,1000px,389px,0px);
+                }
+            }
+            .col-md-6 {
+                h1 {
+                    @extend .section-title;
+                }
+                p {
+                    @extend .section-p;
+                }
+                button {
+                    @extend .btn-btn;
+                    &:hover {
+                        @extend .button-hover;
+                    }
+                }
+                .carousel {
+                    :hover {
+                        transform: scale(1.5);   
+                    }
+                    a i {
+                        color: black;
+                        font-size: 20px;
+                        font-weight: bolder;
+                    }
+                    .fa-angle-left {
+                        margin-left: 0;
+                        margin-right: 5px;
+                    }
+                }
+                    
+            }
+        }
+    }
+    .community {
+        height: 483px;
+        padding: 50px;
+        .carousel {
+            display: block;
+            width: 100%;
+            text-align: right;
+            :hover {
+                transform: scale(1.5);   
+            }
+            a i {
+                color: black;
+                font-size: 20px;
+                font-weight: bolder;
+                margin-right: 62px;
+            }
+            .fa-angle-left {
+                margin-left: 0;
+                margin-right: 5px;
+            }
+        }
+        .gallery {
+            height: 244px;
+            display: flex;
+            justify-content: space-around;
+            .gallery-item-1 {
+                flex: 1;
+                margin-left: 50px;
+                margin-right: 50px;
+                text-align: center;
+                h1 {
+                    @extend .section-title;
+                    font-size: 16px;
+                    color: black;
+                    margin-top: 20px;
+                }
+                p {
+                    @extend .section-p;
+                    font-size: 10px;
+                    margin-top: 20px;
+                }
+            }
+            .gallery-item-2 {
+                background-image: url('images/livello-5.png');
+                height: 244px;
+                background-repeat: no-repeat;
+                flex: 2;
+            }
+            .gallery-item-3 {
+                background-image: url('images/livello-6.png');
+                height: 244px;
+                background-repeat: no-repeat;
+                flex: 2;
+            }
+        }
+    }
+    .subscribe {
+        height: 790px;
+        background-image: url('images/livello-3.png');
+        background-repeat: no-repeat;
+        display: flex;
+        .sub {
+            margin: auto;
+            h1 {
+                letter-spacing: 2.4px;
+                font-size: 24px;
+                color: white;
+                text-transform: uppercase;
+            }
+            .input-group {
+                .input-group-append {
+                    background-color: #16a085;
+                    cursor: pointer;
+                    &:hover {
+                        @extend .button-hover;
+                    }
+                    .btn-outline-secondary {
+                        border: none;
+                        color: white;
+                        height: 100%;
+                        width: 100%;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    .download {
+        height: 396px;
+        text-align: center;
+        padding: 100px;
+        h3 {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .btn-group {
+            .btn-secondary {
+                background-color: #1abc9c;
+                letter-spacing: 2.7px;
+                border: none;
+                height: 56px;
+                font-size: 16px;
+            }
+            .btn-title {
+                height: 56px;   
+            }
+            .btn-icon i{
+                height: 56px;
+                width: 56px;
+
+            }
+        }
+              
+    }
+}
