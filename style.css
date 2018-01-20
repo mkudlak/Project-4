@@ -26,13 +26,14 @@
   /*Dla caraousel*/
   transform: scale(1.5); }
 
-.button-hover, body main .container .row .col-md-6 .btn-get:hover, body .learn-more .container > .row .col-md-6 button:hover, body .subscribe .sub .input-group .input-group-append:hover {
-  background-color: #7be6d0; }
+.button-hover, body main .container .row .col-md-6 .btn-get:hover, body .learn-more .container > .row .col-md-6 button:hover, body .subscribe .sub .input-group .input-group-append:hover, body .download .btn-group .btn-title:hover {
+  background-color: #208873; }
 
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; }
   body header {
     margin-top: 2px;
     background-image: url(images/livello-1.jpg);
@@ -153,6 +154,7 @@ body {
     height: 790px;
     background-image: url("images/livello-3.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex; }
     body .subscribe .sub {
       margin: auto; }
@@ -173,7 +175,8 @@ body {
   body .download {
     height: 396px;
     text-align: center;
-    padding: 100px; }
+    padding: 100px;
+    background-color: #f5f6f7; }
     body .download h3 {
       font-size: 20px;
       font-weight: bolder; }
@@ -188,8 +191,44 @@ body {
       font-size: 16px; }
     body .download .btn-group .btn-title {
       height: 56px; }
-    body .download .btn-group .btn-icon i {
+    body .download .btn-group .btn-icon {
       height: 56px;
-      width: 56px; }
+      width: 56px;
+      background-color: #208873; }
+      body .download .btn-group .btn-icon i {
+        font-size: 29px; }
+  body footer {
+    padding: 50px 100px;
+    position: relative; }
+    body footer .footer-items {
+      text-transform: uppercase;
+      display: inline; }
+      body footer .footer-items a {
+        margin: 10px;
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        letter-spacing: 2.1px; }
+        body footer .footer-items a:hover {
+          color: #16a085; }
+      body footer .footer-items span {
+        color: #16a085; }
+    body footer p {
+      margin: 10px;
+      font-size: 14px;
+      letter-spacing: 2.1px;
+      font-weight: bolder; }
+    body footer .footer-icon {
+      display: inline-block;
+      position: absolute;
+      top: 20%;
+      right: 15%; }
+    body footer p a {
+      text-decoration: none;
+      color: black; }
+      body footer p a:hover {
+        font-weight: bolder;
+        text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
