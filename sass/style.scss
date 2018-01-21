@@ -39,9 +39,8 @@ body {
     font-weight: 300;
     header {
         margin-top: 2px;
-        background-image: url(images/livello-1.jpg);
+        background-image: url('../images/livello-1.jpg');
         background-size: cover;
-        width: 1280px;
         height: 100vh;
         color: white;
     }
@@ -96,7 +95,6 @@ body {
         }  
     }
     main {
-        width: 1280px;
         height: 400px;
         position: relative;
         background-color: #f5f6f7;
@@ -217,13 +215,13 @@ body {
                 }
             }
             .gallery-item-2 {
-                background-image: url('images/livello-5.png');
+                background-image: url('../images/livello-5.png');
                 height: 244px;
                 background-repeat: no-repeat;
                 flex: 2;
             }
             .gallery-item-3 {
-                background-image: url('images/livello-6.png');
+                background-image: url('../images/livello-6.png');
                 height: 244px;
                 background-repeat: no-repeat;
                 flex: 2;
@@ -232,10 +230,12 @@ body {
     }
     .subscribe {
         height: 790px;
-        background-image: url('images/livello-3.png');
-        background-repeat: no-repeat;
+        background-image: url('../images/livello-3.png');
+        background-size: cover;
         background-attachment: fixed;
         display: flex;
+        justify-content: center;
+        align-items: center;
         .sub {
             margin: auto;
             h1 {
